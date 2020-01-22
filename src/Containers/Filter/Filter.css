@@ -1,0 +1,107 @@
+#Filter {
+  position: absolute;
+  width: 232px;
+  height: 252px;
+  left: 10.73%;
+  right: 65.1%;
+  top: 11.85%;
+  bottom: 69.48%;
+
+  background: #FFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+  #Filter p {
+    width: 192px;
+    margin: 20px 20px 10px 20px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #4A4A4A;
+  }
+
+  #Filter div {
+    position: relative;
+    
+    height: 40px;
+    padding-left: 20px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  #Filter div:hover {
+    background: #F1FCFF;
+  }
+
+  /* Hide the browser's default checkbox */
+  #Filter input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  /* Create a custom checkbox */
+  #Filter .checkmark {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    
+    border: 1px solid #9ABBCE;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    background: #FFF;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  #Filter .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  #Filter input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  #Filter .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 9px;
+    border: solid #2196F3;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #Filter input:checked ~ .checkmark {
+    border-color: #2196F3;
+  }
+
+  #Filter label {
+    margin-left: 30px;
+  }

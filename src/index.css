@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  
+  display: flex;
+  justify-content: center;
+
+  background: #E5E5E5;
+}
+
+@font-face {
+    font-family: Open Sans;
+    src: url("/fonts/Open Sans.ttf"); 
+}
+
+

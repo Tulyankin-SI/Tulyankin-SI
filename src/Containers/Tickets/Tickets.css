@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#Tickets {
+  position: absolute;
+  width: 502px;
+  right: 103px;
+  top: 230px;
+  margin: 0;
+}
+
+#Tickets li {
+  width: 100%;
+  height: 184px;
+  margin-bottom: 20px;
+
+  list-style: none;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.Ticket_Header {
+  width: 432px;
+  height: 36px;
+  padding: 20px 50px 10px 20px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.Ticket_Header p {
+  width: 147px;
+  margin-right: 175px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  
+  display: flex;
+  align-items: center;
+
+  color: #2196F3;
+}
+
+.Ticket_Segments {
+  margin-top: 10px;
+  
+  display: flex;
+}
+
+.TSegment {
+  margin-left: 20px;
+  width: 141px;
+  
+}
+
+.TSegment:nth-child(3) {
+  width: 140px;
+}
+
+.TSegment p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color:#A0B0B9;
+}
+
+.TSegment div {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+
+  color: #4A4A4A;
+}
+
+
